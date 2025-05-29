@@ -23,3 +23,11 @@ This is an interactive web application built using **Streamlit** in Python that 
 - *(Optional)* You can mention if you used TF-IDF vectorizer or CountVectorizer for text feature extraction.
 
 ---
+
+## Here are the Screenshots of Email Spam Classifier
+
+![Image](https://github.com/user-attachments/assets/963b199c-3ec9-48fe-b705-94fd425edf9e)
+
+![Image](https://github.com/user-attachments/assets/ad799eb0-bcea-42be-89e3-878ea03dc602)
+
+![Image](https://github.com/user-attachments/assets/f5873c7d-0dae-4681-8c66-c687788e8352)
