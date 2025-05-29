@@ -5,18 +5,18 @@ import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk import punkt_tab
+from nltk.tokenize import word_tokenize  # this is correct
+# Remove: from nltk import punkt_tab
 
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+# Download required resources
+nltk.download('punkt')      # for tokenization
+nltk.download('stopwords')  # for stopwords
 
 ps = PorterStemmer()
 
 def transform_text(text):
     text = text.lower()
-    tokens = nltk.word_tokenize(text)
+    tokens = word_tokenize(text)  # use word_tokenize here
     filtered = [word for word in tokens if word.isalnum()]
     clean = [ps.stem(word) for word in filtered if word not in stopwords.words('english')]
     return " ".join(clean)
