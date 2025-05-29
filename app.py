@@ -5,6 +5,9 @@ import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk import punkt_tab
+
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
